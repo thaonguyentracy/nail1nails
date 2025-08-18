@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nail 1 Nails</title>
+    <style>
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            margin: 0;
+            color: #5D4037; /* dark brown text */
+            line-height: 1.6;
+            background-color: #FAF9F6;/* off white */
+        }
+        header {
+            background: #FFC5D3; /* light pink */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-weight: bold; 
+        }
+        nav a {
+            color: #FAF9F6; /* muted gold */
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        h2 {
+            color: #FFC5D3; /* light prink */
+            font-weight: 800;
+        }
+        .services, .products, .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            padding: 20px;
+            width: 250px;
+            font-weight: bold;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            margin-top: 15px;
+            background: #C5A880; /* muted gold */
+            color: #5D4037; /* wood brown text */
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        .btn:hover {
+            background: #a89170; /* darker muted gold hover */
+        }
+        footer {
+            background: #FAF9F6; /* wood brown */
+            color: #FFC5D3; /* muted gold text */
+            padding: 20px 0;
+            text-align: center;
+            font-weight: bold;
+        }
+       .card img {
+    	    width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+}
+        @media(max-width: 600px){
+            .services, .products, .gallery {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nail 1 Nails</h1>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#products">Products</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services">
+
+            <div class="card">
+            	<p>Eyebrow shaping, tinting, waxing</p>
+            	<ul style="text-align:left; padding-left:15px;">
+                	<li>Eyebrow Waxing: $10</li>
+			<li>Eyebrow Razor: $10</li>
+                	<li>Eyebrow Waxing & Tint: $25</li>
+			<li>Eyebrow Razor & Tint: $25</li>
+            	</ul>
+            </div>
+
+            <div class="card">
+
+            	<p>Eyelash extensions to enhance your eyes.</p>
+            	<ul style="text-align:left; padding-left:15px;">
+                	<li>Eyelash strip (store provides): $20</li>
+			<li>Eyelash strip (customer brings): $15 </li>
+                	<li>Eyelash individual: $30</li>
+            	</ul>
+            </div>
+
+            <div class="card">
+            	<p>Deluxe manicures, gel extensions, and custom nail art for stunning hands.</p>
+            	<ul style="text-align:left; padding-left:15px;">
+                	<li>Acrylic Dipping: $55+</li>
+                        <li>Full Set Acrylic: $35+</li>
+                	<li>Acrylic Powder Color: $45+</li>
+			<li>Acrylic Powder Pink & White: $60+</li>
+			<li>Acrylic fill-in: $30+</li>
+            	</ul>
+            </div>
+
+            <div class="card">
+		<img src="image1.jpg" alt="Eyebrow Wax">
+            	<p>Deluxe manicures, gel extensions, and custom nail art for stunning hands.</p>
+            	<ul style="text-align:left; padding-left:15px;">
+                	<li>Delux Manicure: $55+</li>
+                        <li>Gel Set: $45+</li>
+                	<li>Nail Ombre: $60+</li>
+			<li>Gel S: $65+</li>
+			<li>Gel fill-in: $40+</li>
+			<li>Builder Gel: $60+</li>
+            	</ul>
+            </div>
+
+            <div class="card">
+            	<p>Deluxe manicures, gel extensions, and custom nail art for stunning hands.</p>
+            	<ul style="text-align:left; padding-left:15px;">
+			<li>Manicure Regular: $25+</li>
+			<li>No Chip Manicure: $40+</li>
+			<li>Broken Nail: $5+</li>
+			<li>Nail soak-up: $15+</li>
+			<li>Nail Design: $5+</li>
+			<li>Nail Overlay: $40+</li>
+			<li>No Chip Removal: $10+</li>
+			<li>French Tip: $5+</li>
+			<li>Manicure & Pedicure with no chip: $80+</li>
+            	</ul>
+            </div>
+
+	    <div class="card">
+            	<p>Pamper your feet with our deluxe pedicures. We also offer kid-friendly options!</p>
+            	<ul style="text-align:left; padding-left:15px;">
+			<li>Pedicure Regular: $35+</li>
+			<li>Pedicure No Chip: $45+</li>
+                	<li>Deluxe Pedicure: $55</li>
+                	<li>To Polish Change: $25</li>
+                	<li>Callus Treatment: $15</li>
+            	</ul>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="products">
+
+        <h2>Products</h2>
+        <div class="products">
+            <div class="card">
+                <h3>Nail Polish</h3>
+                <p>High-quality nail polishes in a variety of colors.</p>
+            </div>
+
+            <div class="card">
+                <h3>Nail Care Kits</h3>
+                <p>Complete kits to keep your nails healthy at home.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Shop Phone: +1 (773) 568-9291</p>
+	<p>Owner Phone: +1 (773) 895-1234</p>
+        <p>Address: 11623 S Halsted St, Chicago, IL 60628</p>
+    	<div class="calendly-inline-widget" data-url="https://calendly.com/thaonguyentracy0/nail-1-nails" style="min-width:320px;height:630px;"></div>
+	<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+    </section>
+
+    <footer>
+        <p>© 2025 Nail 1 Nails</p>
+    </footer>
+</body>
+</html>
