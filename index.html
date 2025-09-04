@@ -1,5 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blossom Nail Salon</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Playfair+Display:400,700&display=swap">
+  <style>
+    body {
+      margin: 0; font-family: 'Montserrat', sans-serif; background: #fff0f6; color: #333;
+    }
+    header {
+      background: linear-gradient(rgba(255,192,203,0.8), rgba(255,255,255,0.6)), url('https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1200&q=80') center/cover;
+      text-align: center; padding: 80px 20px 60px 20px;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif; font-size: 3em; margin: 0 0 10px 0;
+    }
+    header p {
+      font-size: 1.5em; color: #b85c84;
+    }
+    nav {
+      background: #fff; padding: 10px 0; box-shadow: 0 2px 5px #f9c3d1;
+      display: flex; justify-content: center; gap: 30px; font-weight: bold;
+    }
+    nav a { color: #b85c84; text-decoration: none; transition: color 0.2s;}
+    nav a:hover { color: #ff69b4;}
+    section { max-width: 1000px; margin: 30px auto; background: #fff; border-radius: 12px; box-shadow: 0 2px 8px #f3b6c9; padding: 40px 30px; }
+    h2 { color: #b85c84; margin-top: 0;}
+    .services { display: flex; flex-wrap: wrap; gap: 40px;}
+    .service-card {
+      flex: 1 1 200px; background: #fff0f6; border-radius: 10px; padding: 20px; margin-bottom: 20px;
+      box-shadow: 0 1px 4px #f7b8d0;
+    }
+    .gallery { display: flex; flex-wrap: wrap; gap: 20px;}
+    .gallery img { width: 180px; height: 180px; object-fit: cover; border-radius: 10px; }
+    .contact-form input, .contact-form textarea {
+      width: 100%; padding: 10px; margin-bottom: 12px; border-radius: 5px; border: 1px solid #e9aebc;
+    }
+    .contact-form button {
+      background: #b85c84; color: #fff; border: none; padding: 12px 30px; border-radius: 6px; font-size: 1em; cursor: pointer;
+    }
+    .contact-form button:hover { background: #ff69b4;}
+    .testimonial { font-style: italic; margin-bottom: 15px; }
+    .map { width: 100%; height: 250px; border: 0; border-radius: 10px; }
+    footer { text-align: center; padding: 20px; color: #b85c84; background: #fff0f6;}
+    @media (max-width: 700px) {
+      .services, .gallery { flex-direction: column; align-items: center; }
+      section { padding: 25px 8px; }
+    }
+  </style>
+</head>
+	
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -189,19 +241,32 @@
         </div>
     </section>
 
+	<section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Nail art sample 1">
+      <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80" alt="Nail art sample 2">
+      <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80" alt="Nail art sample 3">
+      <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Nail art sample 4">
+    </div>
+  	</section>
 
     <section id="contact">
         <h2>Contact Us</h2>
         <p>Shop Phone: +1 (773) 568-9291</p>
 		<p>Owner Phone: +1 (773) 895-1234</p>
         <p>Address: 11623 S Halsted St, Chicago, IL 60628</p>
+		<iframe class="map"
+	      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086059183076!2d-122.419415684677!3d37.77492977975932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c8b8b8b8b%3A0x8b8b8b8b8b8b8b8b!2sNail+Salon!5e0!3m2!1sen!2sus!4v1514524647889"
+	      allowfullscreen></iframe>
     </section>
 
     <footer>
-        <p>© 2025 Nail 1 Nails</p>
+        <p>© 2002 Nail 1 Nails</p>
     </footer>
 </body>
 </html>
+
 
 
 
