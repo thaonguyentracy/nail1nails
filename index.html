@@ -57,85 +57,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nail 1 Nails</title>
     <style>
-        body {
-            font-family: 'Poppins', Arial, sans-serif;
-            margin: 0;
-            color: #5D4037; /* dark brown text */
-            line-height: 1.6;
-            background-color: #FAF9F6;/* off white */
-        }
-        header {
-            background: #FFC5D3; /* light pink */
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-            font-weight: bold; 
-        }
-        nav a {
-            color: #FAF9F6; /* muted gold */
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: 700;
-        }
-        section {
-            padding: 50px 20px;
-            text-align: center;
-        }
-        h2 {
-            color: #FFC5D3; /* light prink */
-            font-weight: 800;
-        }
-        .services, .products, .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-        .card {
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-            padding: 20px;
-            width: 250px;
-            font-weight: bold;
-        }
-        .card img {
-            width: 100%;
-            border-radius: 10px;
-            margin-bottom: 10px;
-        }
-        .btn {
-            display: inline-block;
-            padding: 12px 25px;
-            margin-top: 15px;
-            background: #C5A880; /* muted gold */
-            color: #5D4037; /* wood brown text */
-            text-decoration: none;
-            font-weight: 700;
-            border-radius: 5px;
-            transition: background 0.3s ease;
-        }
-        .btn:hover {
-            background: #a89170; /* darker muted gold hover */
-        }
-        footer {
-            background: #FAF9F6; /* wood brown */
-            color: #FFC5D3; /* muted gold text */
-            padding: 20px 0;
-            text-align: center;
-            font-weight: bold;
-        }
-       .card img {
-    	    width: 100%;
-            border-radius: 10px;
-            margin-bottom: 10px;
-}
-        @media(max-width: 600px){
-            .services, .products, .gallery {
-                flex-direction: column;
-            }
-        }
-    </style>
+    body {
+      font-family: 'Poppins', Arial, sans-serif;
+      margin: 0;
+      color: #5D4037;
+      line-height: 1.6;
+      background-color: #FAF9F6;
+    }
+
+    header {
+      background: #FFC5D3;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: #FAF9F6;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #FFC5D3;
+      font-weight: 800;
+    }
+
+    .services, .products, .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(255, 192, 203, 0.6); /* pink shadow */
+      padding: 20px;
+      width: 250px;
+      font-weight: bold;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.6s ease-out;
+    }
+
+    .card.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      margin-top: 15px;
+      background: #C5A880;
+      color: #5D4037;
+      text-decoration: none;
+      font-weight: 700;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #a89170;
+    }
+
+    footer {
+      background: #FAF9F6;
+      color: #FFC5D3;
+      padding: 20px 0;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    @media(max-width: 600px){
+      .services, .products, .gallery {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
 </head>
 <body>
     <header>
@@ -264,6 +279,7 @@
     </footer>
 </body>
 </html>
+
 
 
 
